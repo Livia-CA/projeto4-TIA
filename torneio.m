@@ -1,6 +1,6 @@
-function [pais] = torneio(aptidao, qntd_individuos)
+function [pais] = torneio(aptidao)
   
-  sorteio = randperm(qntd_individuos);
+  sorteio = randperm(length(aptidao));
   pais = zeros(1,2);
   j = 1;
   
